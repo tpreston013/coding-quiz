@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Changed title! -->
+    <title>Code Quiz</title>
+    <!-- Link the CSS and maybe add an icon -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+<!-- Header holds the top bar with link to highscores and the timer -->
+    <header>
+        <a href ="#highscores" id="highscores-link">View Highscores</a>
+        <div id="timer">Time Left: <span id="time-remaining"></span></div>
+    </header>
+
+    <!-- Main holds intro page and questions -->
+    <main>
+        <!-- where the intro page lives -->
+        <div id="intro-page">
+            <h1>Test Your Coding Knowledge</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum iure, accusamus voluptatem doloremque fugit dicta atque explicabo, cupiditate magni optio dolorum, omnis reprehenderit fuga minus ut provident. Corrupti, placeat?
+            </h2>
+            <button class="buttons" id="start-button">Start Quiz</button> 
+        </div>
+      
+        <!-- Where the questions live -->
+        <div id="quiz-page">
+            <h2 id="question"></h2>
+            <ul>
+                <li id= "answer1">
+                    <button class="buttons">a</button>
+                </li>
+                <li id= "answer2">
+                    <button class="buttons">b</button>
+                </li>
+                <li id= "answer3">
+                    <button class="buttons">c</button>
+                </li>
+                <li id= "answer4">
+                    <button class="buttons">d</button>
+                </li>
+            </ul>
+            <h3 id="question-result"></h3>
+        </div>
+
+        <!-- Need to include results and highscores page -->
+        <div id="quiz-end">
+            <h2>All done!</h2>
+            <p>
+                Your final score is <span id="final-score"></span>
+            </p>
+            <!-- Include place to input initials -->
+            <button class="buttons" id="submit-button">Submit</button>
+        </div>
+
+        <!-- Highscores page -->
+        <div id="highscores">
+            <h1>Highscores</h1>
+            <ol id="score-list"></ol>
+            <div>
+                <button class="buttons">
+                    <a href="#intro-page">Go Back</a>
+                </button>
+                <button class="buttons">
+                    Clear Highscores
+                </button>
+            </div>
+
+        </div>
+
+
+    
+    </main>
+    <!-- JS script tag attached -->
+    <script src= "./Assets/js/script.js"></script>
+</body>
+</html>
